@@ -1,0 +1,101 @@
+/* -------MOBLE------- */
+@media (max-width : 740px){
+    #nav{
+        display: block;
+    }
+
+    #nav > li {  /* dấu > để inline chỉ ảnh hưởng đến con đầu tiên */
+        display :block; 
+    }
+    #nav > li:first-child{  /* lấy ra li đầu tiên của ul */
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial; /* trả về giá trị mặc định  */
+        
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 41px;
+        background-color: black;
+    }
+    #header{
+        overflow: hidden;  /* ẩn menu */
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #header .menu-btn{
+        display: block;
+    }
+    .text-heading {
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-shadow: 0 0 1px black;
+    }
+    .text-description{
+        font-size: 10px;
+        text-shadow: 0 0 1px black;
+    }
+    .text-content{
+        bottom: 26px;
+    }
+    /* ----members----- */
+    #content .member-avatar{
+        width : 60%
+    }
+    #content .member-item {
+        float :none;
+        width : initial;
+        text-align: center;
+    }
+    #content .member-name {
+        margin-top: 28px;
+    }
+    /*  */
+    .place-item{ 
+        width : 100%;
+        margin-top: 16px;
+    }
+    .place-buy{
+        display: block;
+        width: 100%;
+      
+    }
+    .col-half.contact-form { 
+        margin-top: 16px; 
+        width: initial;
+    }.col-half.name-email,
+    .contact-form .contact-send,
+    .col-half.contact-info{
+        width: 100%;
+    }
+   .form-control{
+        margin-top: 8px;
+    } 
+    .contact-message{
+        margin-top: 0px;
+    }
+}
+/* -------TABLET & MOBILE------- */
+@media (max-width:1023px){
+    .btn {
+        padding: 15px 16px;
+    }
+    .contact-form .form-control {
+        padding: 15px;
+    }
+    .social-list {
+        font-size :48px;
+    }
+    #footer .social-list a{
+        margin: 0 8px;
+    }
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+    .contact-info{
+        line-height: 2;
+    }
+}
